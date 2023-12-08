@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chen's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="../script.js"></script>
+</head>
+<body class="mainBackground">
+
+    <header>
+        <!-- Bootstrap Navbar -->
+        <nav class="navbar navbar-expand-lg custom-nav">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../Images/home.png" alt="" class="home_logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><span class="navbar-toggler-icon"><img src="../Images/cloud.png" alt="" class="home_logo"></span></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Other_Pages/About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Other_Pages/Resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Other_Pages/Experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Other_Pages/Contact.html"style="color: black;">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="contact" class="container mt-4">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or would like to get in touch, please fill out the form below:</p>
+        
+        <!-- Contact Form -->
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent the form from actually submitting
+            alert('Ok, it will not actually work, but Thank you for clicking submit!');
+        });
+    </script>
+
+
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+.mainBackground{
+    background-color: rgb(140, 196, 202);
+}
+
+.custom-nav{
+    background-color: rgba(176, 224, 230, 0)
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Use the full height of the viewport */
+    padding: 20pt;
+    margin: 0;
+    background-image: url('Images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.flex-grow{
+    flex-grow: 1;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+
+h1 {
+    font-size: 2rem;
+}
+
+.navbar-nav .nav-link:hover {
+    transform: scale(1.1); /* Adjust the scale value as needed */
+    transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.home_logo:hover{
+    transform: scale(1.1); /* Adjust the scale value as needed */
+    transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+/* Front Page Welcoming Word */
+.small-left{
+    padding-left: 200pt;
+    color: #5d5c5c;
+    text-align: left;
+    font-size: 1.5rem;
+}
+.large-middle{
+    padding-left: 200pt;
+    color: #2e2b2b;
+    text-align: left;
+    font-size: 5rem;
+}
+.medium-middle{
+    padding-left: 200pt;
+    color: #444343;
+    text-align: left;
+    font-size: 2.5rem;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; /* Adjust the weight as needed */
+    position: relative;
+}
+
+.home_logo{
+    width:65px;
+    height: auto;
+}
+
+/* Style for the popup content */
+.popup {
+    display: none;
+    position: absolute;
+    background-color: rgba(180, 220, 223, 0);
+    border: 1px solid #ddd;
+    padding: 10px;
+    z-index: 1;
+    font-size: 1.3rem;
+}
+
+.hover-trigger:hover + .popup{
+    display: block;
+}
+
+.navbar-nav .nav-link{
+    color: white;
+    font-size: 1.5rem;
+}
+
+#develop{
+    color: white;
+}
+
+#test{
+    color: white;
+}
+
+footer {
+    background-color: #33333300; /* Example background color */
+    color: rgb(0, 0, 0); /* Example text color */
+    padding: 10px;
+    text-align: center;}
+
+
+/* When the screen width is less than 768px */
+@media (max-width: 768px) {
+    .small-left{
+        font-size: 1rem;
+        padding-left: 20pt;
+    }
+    .large-middle{
+        font-size: 3.5rem;
+        padding-left: 20pt;
+    }
+    .medium-middle{
+        font-size: 1.5rem;
+        padding-left: 20pt;
+    }
+
+    .popup {
+        display: none;
+        position: absolute;
+        background-color: rgba(180, 220, 223, 0);
+        border: 1px solid #ddd;
+        padding: 10px;
+        z-index: 1;
+        font-size: 0.7rem;
+    }
+
+    .navbar-nav .nav-link{
+        color: white;
+        font-size: 0.9rem;
+    }
+
+
+}
+
